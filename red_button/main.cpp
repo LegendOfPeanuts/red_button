@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 
     if (!cap.isOpened()) {
         std::cout << prefix << error_prefix << "Error opening video stream or file" << std::endl;
-        return -1;
+        return 0;
     }
 
     double dWidth = cap.get(CAP_PROP_FRAME_WIDTH); // Get the width of frames of the video
