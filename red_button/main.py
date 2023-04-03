@@ -4,7 +4,6 @@ import numpy as np
 # Function to preprocess the frame
 def preprocess_frame(frame):
 
-
     # Convert frame to HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
@@ -96,6 +95,9 @@ while True:
     # Read a frame
 
     path = "red-round-glossy-button-isolated.png"
+    #path = "biofoul.png"
+    #path = "seagrass.png"
+
 
     frame = cv2.imread(path)
     #ret, frame = cap.read()
